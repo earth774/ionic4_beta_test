@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>ข้อมูลส่วนตัว</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="profile_image">
+    <img *ngIf="!userLogin.profile_image&&!imgdata" src="../../assets/img/default.png" class="image">
+    <img *ngIf="userLogin.profile_image&&!imgdata" data-src="{{img_url+userLogin.profile_image}}" class="image">
+    <!-- <img *ngIf="file" data-src="{{ imgdata }}" class="image"> -->
+    <!-- <input type="file" (change)="changeImage($event.target.files)" id="fileinput" style="display: none;" accept="image/*"
+      #filess> -->
+    <!-- <ion-icon ios="ios-camera" class="icon_camera" (click)="uploadImage()"></ion-icon> -->
+  </div>
+  <input type="file" accept="image/*" (change)="changeImage($event)" #filess>
+
+</ion-content>

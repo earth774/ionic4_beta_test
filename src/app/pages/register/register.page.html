@@ -1,0 +1,49 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button text="Page One"></ion-back-button>
+    </ion-buttons>
+    <ion-title>register</ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="logo">
+    <img src="../../assets/icon/logo_app.png" class="logo_img">
+  </div>
+
+  <form [formGroup]="formSignup" (submit)="register()">
+    <div class="form_register">
+      <div class="title-form-register">สมัครสมาชิก
+      </div>
+      <ion-list>
+        <ion-item>
+          <ion-input type='text' placeholder="ชื่อ-นามสกุล" formControlName="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type='text' placeholder="อีเมล" formControlName="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type='text' placeholder="ชื่อผู้ใช้งาน" formControlName="username"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type='password' placeholder="รหัสผ่าน" formControlName="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type='password' placeholder="ยืนยันรหัสผ่าน" formControlName="confirm_password"></ion-input>
+        </ion-item>
+        <!-- <div class="text-error" color="danger" padding-left padding-top *ngIf="(confirm_password!=userData.password) ">*รหัสผ่านไม่ตรงกัน</div> -->
+
+      </ion-list>
+      <ion-button expand="full" color="warning" type="submit" [disabled]="!formSignup.valid">สมัครสมาชิก
+      </ion-button>
+
+    </div>
+  </form>
+
+  <div class="button_login">
+    <ion-button href="/login" routerDirection="backward" expand="full" color="warning">
+      เข้าสู่ระบบ
+    </ion-button>
+  </div>
+</ion-content>

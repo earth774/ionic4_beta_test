@@ -1,0 +1,42 @@
+<ion-header>
+  <!-- <ion-toolbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-toolbar> -->
+</ion-header>
+
+<ion-content>
+  <div class="logo">
+    <img src="../../assets/icon/logo_app.png" class="logo_img">
+  </div>
+
+  <form [formGroup]="loginForm" (submit)="login()">
+    <div class="login">
+      <ion-list>
+        <ion-item>
+          <ion-input type='text' placeholder="Username" formControlName="username" clearInput></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type='password' placeholder="Password" formControlName="password" clearInput></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="full" color="warning" type="submit" [disabled]="!loginForm.valid">เข้าสู่ระบบ
+      </ion-button>
+
+    </div>
+  </form>
+
+  <div class="button_register">
+    <!-- routerLink="/register" -->
+    <ion-button href="/register" routerDirection="forward" expand="full" color="warning">
+      สมัครสมาชิก
+      <!-- <ion-icon slot="end" name="star" style="right:0;"></ion-icon> -->
+    </ion-button>
+    <!-- <ion-nav-push> -->
+    <!-- <ion-button href="/home" routerDirection="backward"></ion-button> Back -->
+
+    <!-- </ion-nav-push> -->
+  </div>
+
+</ion-content>

@@ -1,0 +1,35 @@
+:host {
+  ion-content {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../../../assets/img/agriculture.jpg');
+    background-repeat: no-repeat;
+    background-size: 964.33px 812px;
+
+    .profile_image {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../../../assets/img/profile.jpg');
+      background-repeat: no-repeat;
+      background-size: 100% 40vh;
+      width: 100vw;
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      .image {
+        border-radius: 186px;
+        width: 130px;
+        height: 130px;
+        border: 1px solid #999;
+        background-color: #FFF;
+      }
+
+      .icon_camera {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 40px;
+      }
+    }
+
+  }
+}

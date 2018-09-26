@@ -1,0 +1,60 @@
+:host {
+
+  ion-content {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../../../assets/img/agriculture.jpg');
+    background-repeat: no-repeat;
+    background-size: 964.33px 812px;
+
+    .logo {
+      text-align: center;
+      padding-top: 8vh;
+
+      .logo_img {
+        width: 140px;
+        height: 220px;
+      }
+    }
+
+    .login {
+      background: #FFF;
+      margin: 1% 4%;
+      width: 92%;
+
+      ion-list {
+        padding: 0 4%;
+
+        ion-item {
+          padding-top: 1rem;
+
+          ion-input {
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+
+      ion-button {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 5.33px;
+
+        button {
+          padding: 20px 0;
+          height: 50px;
+        }
+      }
+    }
+
+    .button_register {
+      margin: 4% 4%;
+      width: 92%;
+
+      ion-button {
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 5.33px;
+      }
+    }
+
+  }
+}
